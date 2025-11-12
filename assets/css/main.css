@@ -44,15 +44,17 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f7fbfa;
+  --background-color: #e0f7fa;
   --surface-color: #ffffff;
+  --heading-color: #172624;
+  --default-color: #444444;
 }
 
 .dark-background {
   --background-color: #0288b5;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #252525;
+  --surface-color: #000000;
   --contrast-color: #ffffff;
 }
 
@@ -264,6 +266,7 @@ h6 {
     display: flex;
     list-style: none;
     align-items: center;
+    justify-content: center; /* Center the list items */
   }
 
   .navmenu li {
@@ -273,15 +276,19 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 18px 15px;
+    padding: 10px 20px; /* Adjusted padding for the box */
+    margin: 0 5px; /* Add space between boxes */
     font-size: 15px;
     font-family: var(--nav-font);
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Center text inside the box */
     white-space: nowrap;
     transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    border: 1px solid transparent; /* Start with a transparent border */
+    border-radius: 8px; /* Rounded corners */
   }
 
   .navmenu a i,
@@ -293,13 +300,15 @@ h6 {
   }
 
   .navmenu li:last-child a {
-    padding-right: 0;
+    padding-right: 20px; /* Keep padding consistent */
   }
 
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--surface-color); /* White text on hover/active */
+    background-color: var(--accent-color); /* Blue background */
+    border-color: var(--accent-color);
   }
 
   .navmenu .dropdown ul {
@@ -807,9 +816,9 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background: linear-gradient(135deg,
+  background: linear-gradient(85deg,
       var(--surface-color) 0%,
-      color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
+      color-mix(in srgb, var(--accent-color), transparent 99%) 100%);
   padding: 60px 0;
   scroll-margin-top: 78px;
   overflow: clip;
@@ -5037,4 +5046,71 @@ section,
   .services .appointment-banner .banner-text h3 {
     font-size: 26px;
   }
+}
+
+/*--------------------------------------------------------------
+# Header with Background Image
+--------------------------------------------------------------*/
+.header.header-with-bg {
+  background: url('../img/imagen_fondo.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: #ffffff; /* Make default text color white */
+}
+
+.header.header-with-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(23, 38, 36, 0.8); /* Dark overlay, using heading color with opacity */
+  z-index: 1; /* Place overlay above background but below content */
+}
+
+/* Make sure header content is above the overlay */
+.header.header-with-bg .topbar,
+.header.header-with-bg .branding {
+  position: relative;
+  z-index: 2;
+}
+
+/* Make topbar and branding backgrounds transparent */
+.header.header-with-bg .topbar,
+.header.header-with-bg {
+    background-color: transparent;
+}
+
+/* Update text colors for readability */
+.header.header-with-bg .topbar .contact-info i,
+.header.header-with-bg .topbar .contact-info i a,
+.header.header-with-bg .topbar .contact-info i span,
+.header.header-with-bg .topbar .social-links a,
+.header.header-with-bg .logo h1 {
+  color: #ffffff;
+}
+
+.header.header-with-bg .topbar .social-links a:hover,
+.header.header-with-bg .topbar .contact-info i a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Adjust navmenu item background for contrast */
+.header.header-with-bg .navmenu a,
+.header.header-with-bg .navmenu a:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.header.header-with-bg .navmenu li:hover>a,
+.header.header-with-bg .navmenu .active,
+.header.header-with-bg .navmenu .active:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* Ensure mobile nav toggle is visible */
+.header.header-with-bg .mobile-nav-toggle {
+    color: #ffffff;
 }

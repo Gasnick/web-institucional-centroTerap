@@ -24,20 +24,20 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
-  <title>Clínica Dental - Inicio</title>
+  <title>Centro Terapéutico - Inicio</title>
 </head>
 
 <body class="index-page">
-  <header id="header" class="header sticky-top">
-    <div class="topbar d-none d-md-flex align-items-center dark-background">
-      <div class="container d-flex justify-content-center justify-content-md-between">
+  <header id="header" class="header sticky-top header-with-bg">
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center">
         <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope d-flex align-items-center"><a
               href="mailto:contact@example.com">contact@example.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>+54 5589 55488 55</span></i>
           <i class="bi bi-geo-alt d-flex align-items-center ms-4"><span>Calle 123456 - Barrio Ejemplo</span></i>
         </div>
-        <div class="social-links d-none d-md-flex align-items-center">
+        <div class="social-links d-none d-md-flex align-items-center ms-4">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
           <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
@@ -47,42 +47,19 @@
     </div>
     <!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-cente">
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">Clínica Dental</h1>
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex flex-column align-items-center">
+        <a href="index.html" class="logo d-flex align-items-center mb-3">
+          <h1 class="sitename">Centro Terapéutico</h1>
         </a>
-
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">La clínica</a></li>
-            <li class="dropdown">
-              <a href="pages/quienes-somos.html"><span>Institucional</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li>
-                  <a href="pages/quienes-somos.html">¿Quiénes Somos?</a>
-                </li>
-                <li><a href="pages/quienes-somos.html#stats">Misión, Visión y Valores</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="/pages/tratamientos.html"><span>Tratamientos</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li><a href="/pages/tratamientos.html#ortodoncia">Ortodoncia</a></li>
-                <li><a href="/pages/tratamientos.html#implantes">Implantes</a></li>
-                <li><a href="/pages/tratamientos.html#radiografia_tomografia">Radiografía y tomografía</a></li>
-                <li><a href="/pages/tratamientos.html#cirugia">Cirugía</a></li>
-                <li><a href="/pages/tratamientos.html#blanqueamiento">Blanqueamiento</a></li>
-              </ul>
-            </li>
-            <li><a href="/pages/noticias.html">Noticias</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+            <li><a href="#areas-de-abordaje">Áreas de abordaje</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#novedades">Novedades</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -93,33 +70,29 @@
     </a>
   </header>
 
-  <main class="">
-    <section id="hero" class="hero section dark-background">
+  <main class="main ">
+    <!-- HERO Section -->
+    <section id="hero" class="hero section section">
       <div class="hero-content">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div class="content">
                 <h1>Transforming Ideas Into Strategic Business Solutions</h1>
-                <p>
-                  We partner with forward-thinking companies to accelerate
-                  growth, optimize operations, and unlock their full potential
-                  through innovative consulting approaches and data-driven
-                  insights.
-                </p>
+                <p>We partner with forward-thinking companies to accelerate growth, optimize operations, and unlock
+                  their full potential through innovative consulting approaches and data-driven insights.</p>
                 <div class="cta-group">
-                  <a href="#about" class="btn-primary bi-whatsapp">
-                    Contáctanos</a>
+                  <a href="#about" class="btn-primary">Start Your Journey</a>
                   <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn-secondary glightbox">
                     <i class="bi bi-play-circle"></i>
-                    <span>La clínica por dentro</span>
+                    <span>Watch Our Story</span>
                   </a>
                 </div>
               </div>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <div class="hero-image">
-                <img src="assets/img/about/about-8.webp" alt="Corporate Business" class="img-fluid" />
+                <img src="assets/img/about/about-8.webp" alt="Corporate Business" class="img-fluid">
                 <div class="floating-card" data-aos="fade-up" data-aos-delay="300">
                   <div class="card-content">
                     <div class="metric">
@@ -137,6 +110,7 @@
           </div>
         </div>
 
+
         <div class="hero-features">
           <div class="container">
             <div class="row">
@@ -147,8 +121,7 @@
                   </div>
                   <h4>Certificación comprobada</h4>
                   <p>
-                    Accelerate your business expansion with proven
-                    methodologies
+                    Contamos con profesionales certificados y en constante formación.
                   </p>
                 </div>
               </div>
@@ -157,10 +130,9 @@
                   <div class="icon">
                     <i class="bi bi-lightbulb"></i>
                   </div>
-                  <h4>Inovación en tecnología</h4>
+                  <h4>Enfoque Innovador</h4>
                   <p>
-                    Transform challenges into opportunities through creative
-                    solutions
+                    Aplicamos las últimas metodologías y enfoques terapéuticos.
                   </p>
                 </div>
               </div>
@@ -171,7 +143,7 @@
                   </div>
                   <h4>Equipo Dedicado</h4>
                   <p>
-                    Industry veterans dedicated to your success and growth
+                    Un equipo de profesionales dedicados a tu bienestar.
                   </p>
                 </div>
               </div>
@@ -182,7 +154,7 @@
                   </div>
                   <h4>Resultados satisfactorios</h4>
                   <p>
-                    Track record of delivering measurable business outcomes
+                    Comprometidos con el progreso y la mejora de nuestros pacientes.
                   </p>
                 </div>
               </div>
@@ -191,113 +163,305 @@
         </div>
       </div>
     </section>
-    <!-- /Hero Section -->
+    <!-- /HERO Section -->
 
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section dark-background">
+    <!-- Sobre nosotros Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Servicios</h2>
-        <p>Descubre nuestros servicios de odontología</p>
-      </div>
+        <h2>About</h2>
+        <p>Find Out More About Us</p>
+      </div><!-- End Section Title -->
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h2>Building Excellence Through Innovation and Integrity</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+              <div class="description">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                  anim id est laborum.</p>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                  sunt explicabo.</p>
+              </div>
+
+              <div class="stats-row">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                      class="purecounter"></span>+
+                  </div>
+                  <div class="stat-label">Years of Excellence</div>
+                </div>
+
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1"
+                      class="purecounter"></span>+
+                  </div>
+                  <div class="stat-label">Satisfied Clients</div>
+                </div>
+
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="500">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1"
+                      class="purecounter"></span>+
+                  </div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+              </div><!-- End Stats Row -->
+
+              <div class="cta-section" data-aos="fade-up" data-aos-delay="300">
+                <a href="#team" class="btn-link">Meet Our Team <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-container">
+              <img src="assets/img/about/about-square-8.webp" alt="About Us" class="img-fluid">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <i class="bi bi-award"></i>
+                  <div class="overlay-text">
+                    <h4>Award Winning</h4>
+                    <p>Excellence in Service</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Sobre nosotros Section -->
+
+    <!-- Servicios Section -->
+    <section id="featured-services" class="featured-services section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Áreas de Abordaje</h2>
+          <p>Ofrecemos un acompañamiento terapéutico en diversas áreas para niños, adolescentes y adultos.</p>
+        </div>
+
         <div class="row g-5">
+
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-brush"></i>
               </div>
-              <h3>Diagnóstico</h3>
-              <p>
-                Nulla facilisi morbi tempus iaculis urna id volutpat lacus
-                laoreet non curabitur gravida arcu.
-              </p>
+              <h3>Creative Design</h3>
+              <p>Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu.</p>
               <a href="service-details.html" class="service-link">
-                <span>Explore Servicio</span>
+                <span>Explore Service</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-          </div>
-          <!-- End Service Item -->
+          </div><!-- End Service Item -->
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-globe"></i>
               </div>
-              <h3>Limpieza dental</h3>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.
-              </p>
+              <h3>Web Development</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
               <a href="service-details.html" class="service-link">
-                <span>Explore Servicio</span>
+                <span>Explore Service</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-          </div>
-          <!-- End Service Item -->
+          </div><!-- End Service Item -->
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-graph-up-arrow"></i>
               </div>
-              <h3>Tratamientos</h3>
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum.
-              </p>
+              <h3>Digital Marketing</h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
               <a href="service-details.html" class="service-link">
                 <span>Explore Service</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-          </div>
-          <!-- End Service Item -->
+          </div><!-- End Service Item -->
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-headset"></i>
               </div>
-              <h3>Extracciones</h3>
-              <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa
-                qui officia deserunt mollit anim.
-              </p>
+              <h3>Consulting</h3>
+              <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim.</p>
               <a href="service-details.html" class="service-link">
                 <span>Explore Service</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-          </div>
-          <!-- End Service Item -->
-        </div>
-      </div>
-    </section>
-    <!-- /Featured Services Section -->
+          </div><!-- End Service Item -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section dark-background">
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Servicios Section -->
+
+    <!-- Novedades Section -->
+    <section id="services" class="services section">
+
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Antes y Después</h2>
-        <p>Transformaciones de Sonrisas</p>
-      </div>
-      <!-- End Section Title -->
+        <h2>Services</h2>
+        <p>Check Our Services</p>
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3>Web Development</h3>
+              <p>Crafting responsive, modern websites that deliver exceptional user experiences and drive business
+                growth.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-brush"></i>
+              </div>
+              <h3>Brand Design</h3>
+              <p>Creating compelling visual identities that communicate your brand's essence and resonate with your
+                audience.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h3>Digital Marketing</h3>
+              <p>Strategic marketing solutions that amplify your reach and convert prospects into loyal customers.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h3>Mobile Apps</h3>
+              <p>Native and cross-platform mobile applications that provide seamless functionality across all devices.
+              </p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3>Cybersecurity</h3>
+              <p>Comprehensive security solutions to protect your digital assets and maintain customer trust.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Consulting</h3>
+              <p>Expert guidance and strategic insights to optimize your business processes and achieve sustainable
+                growth.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Novedades Section -->
+
+    <!-- Galería Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Check Our&nbsp; Portfolio</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
         <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
-          <div class="portfolio-filters-wrapper" data-aos="fade-up" data-aos-delay="100" style="margin: 0"></div>
+
+          <div class="portfolio-filters-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Projects</li>
+              <li data-filter=".filter-branding">Branding</li>
+              <li data-filter=".filter-web">Web Design</li>
+              <li data-filter=".filter-print">Print Design</li>
+              <li data-filter=".filter-motion">Motion</li>
+            </ul>
+          </div>
 
           <div class="row gy-4 portfolio-grid isotope-container" data-aos="fade-up" data-aos-delay="200">
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-card">
                 <div class="image-container">
-                  <img src="assets/img/ayd1.webp" class="img-fluid" alt="Brand Identity" loading="lazy" />
+                  <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Brand Identity"
+                    loading="lazy">
                   <div class="overlay">
                     <div class="overlay-content">
-                      <a href="assets/img/ayd1.webp" class="glightbox zoom-link" title="Brand Identity Project">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox zoom-link"
+                        title="Brand Identity Project">
                         <i class="bi bi-zoom-in"></i>
                       </a>
                       <a href="portfolio-details.html" class="details-link" title="View Project Details">
@@ -312,15 +476,16 @@
                 </div>
               </div>
             </div>
-            <!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="image-container">
-                  <img src="assets/img/ayd2.png" class="img-fluid" alt="E-commerce Platform" loading="lazy" />
+                  <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="E-commerce Platform"
+                    loading="lazy">
                   <div class="overlay">
                     <div class="overlay-content">
-                      <a href="assets/img/ayd2.png" class="glightbox zoom-link" title="E-commerce Platform">
+                      <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox zoom-link"
+                        title="E-commerce Platform">
                         <i class="bi bi-zoom-in"></i>
                       </a>
                       <a href="portfolio-details.html" class="details-link" title="View Project Details">
@@ -335,15 +500,16 @@
                 </div>
               </div>
             </div>
-            <!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-print">
               <div class="portfolio-card">
                 <div class="image-container">
-                  <img src="assets/img/ayd3.avif" class="img-fluid" alt="Magazine Design" loading="lazy" />
+                  <img src="assets/img/portfolio/portfolio-portrait-5.webp" class="img-fluid" alt="Magazine Design"
+                    loading="lazy">
                   <div class="overlay">
                     <div class="overlay-content">
-                      <a href="assets/img/ayd3.avif" class="glightbox zoom-link" title="Magazine Design">
+                      <a href="assets/img/portfolio/portfolio-portrait-5.webp" class="glightbox zoom-link"
+                        title="Magazine Design">
                         <i class="bi bi-zoom-in"></i>
                       </a>
                       <a href="portfolio-details.html" class="details-link" title="View Project Details">
@@ -358,152 +524,143 @@
                 </div>
               </div>
             </div>
-            <!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="Motion Graphics"
+                    loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox zoom-link"
+                        title="Motion Graphics">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="portfolio-details.html" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Motion Graphics</h3>
+                  <p>Animated visual storytelling</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt="Logo Collection"
+                    loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="assets/img/portfolio/portfolio-9.webp" class="glightbox zoom-link"
+                        title="Logo Collection">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="portfolio-details.html" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Logo Collection</h3>
+                  <p>Diverse brand mark explorations</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="assets/img/portfolio/portfolio-portrait-8.webp" class="img-fluid" alt="Mobile App Design"
+                    loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="assets/img/portfolio/portfolio-portrait-8.webp" class="glightbox zoom-link"
+                        title="Mobile App Design">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="portfolio-details.html" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Mobile App Design</h3>
+                  <p>User-centered interface design</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-print">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="Packaging Design"
+                    loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox zoom-link"
+                        title="Packaging Design">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="portfolio-details.html" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Packaging Design</h3>
+                  <p>Sustainable product packaging solutions</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="Brand Animation"
+                    loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox zoom-link"
+                        title="Brand Animation">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="portfolio-details.html" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Brand Animation</h3>
+                  <p>Dynamic brand identity systems</p>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <!-- End Portfolio Grid -->
+
         </div>
+
       </div>
+
     </section>
-    <!-- /Portfolio Section -->
+    <!-- /Galería Section -->
 
-    <!-- Team Section -->
-    <section id="team" class="team section dark-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Our Hardworking Team</p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-card">
-              <div class="member-image-wrapper">
-                <img src="assets/img/person/person-f-1.webp" class="img-fluid" alt="Team Member" />
-              </div>
-              <div class="member-content">
-                <h4 class="member-name">Sarah Chen</h4>
-                <span class="member-role">Chief Executive Officer</span>
-                <p class="member-bio">
-                  Praesentium nihil ut laudantium cumque. Ut et consequatur ab
-                  ut totam architecto. Expedita sunt eum
-                </p>
-                <div class="member-socials">
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-card">
-              <div class="member-image-wrapper">
-                <img src="assets/img/person/person-m-2.webp" class="img-fluid" alt="Team Member" />
-              </div>
-              <div class="member-content">
-                <h4 class="member-name">David Lee</h4>
-                <span class="member-role">Product Manager</span>
-                <p class="member-bio">
-                  Voluptas qui enim omnis est atque. Enim sunt quo et amet
-                  corporis et. Autem eaque optio.
-                </p>
-                <div class="member-socials">
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-card">
-              <div class="member-image-wrapper">
-                <img src="assets/img/person/person-f-3.webp" class="img-fluid" alt="Team Member" />
-              </div>
-              <div class="member-content">
-                <h4 class="member-name">Laura Rodriguez</h4>
-                <span class="member-role">Marketing Director</span>
-                <p class="member-bio">
-                  Qui ut autem quo error molestiae. Voluptatem quia eligendi
-                  voluptatibus beatae vitae et quis. Quis voluptatem.
-                </p>
-                <div class="member-socials">
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-card">
-              <div class="member-image-wrapper">
-                <img src="assets/img/person/person-m-4.webp" class="img-fluid" alt="Team Member" />
-              </div>
-              <div class="member-content">
-                <h4 class="member-name">Michael Brown</h4>
-                <span class="member-role">Lead Engineer</span>
-                <p class="member-bio">
-                  Rerum et sint voluptatem enim aut. Quisquam et alias ut qui
-                  voluptatum. Autem voluptas exercitationem.
-                </p>
-                <div class="member-socials">
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-github"></i></a>
-                  <a href="#"><i class="bi bi-stack-overflow"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Team Member -->
-        </div>
-      </div>
-    </section>
-    <!-- /Team Section -->
-
-    <!-- Banner Section -->
-    <section id="services" class="services section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="appointment-banner" data-aos="fade-up" data-aos-delay="900">
-          <div class="banner-content">
-            <div class="banner-text">
-              <h3>¿Necesita atención médica?</h3>
-              <p>
-                Reserva tu cita con nuestros profesionales altamente
-                capacitados y recibe la atención que mereces.
-              </p>
-            </div>
-            <div class="banner-actions">
-              <a href="appointment.html" class="btn-primary">Reservar turno</a>
-              <a href="tel:+15551234567" class="btn-secondary">
-                <i class="fas fa-phone"></i>
-                Llame ahora
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Banner Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section dark-background">
+    <!-- Contacto Section -->
+    <section id="contact" class="contact section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
         <p>Need Help? Contact Us</p>
-      </div>
-      <!-- End Section Title -->
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-stretch">
@@ -511,11 +668,8 @@
             <div class="contact-form-container">
               <div class="form-intro">
                 <h2>Let's Start a Conversation</h2>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit
-                  esse cillum dolore eu fugiat nulla pariatur excepteur sint
-                  occaecat cupidatat.
-                </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                  excepteur sint occaecat cupidatat.</p>
               </div>
 
               <form action="forms/contact.php" method="post" class="php-email-form contact-form">
@@ -523,7 +677,7 @@
                   <div class="col-md-6">
                     <div class="form-field">
                       <input type="text" name="name" class="form-input" id="userName" placeholder="Your Name"
-                        required="" />
+                        required="">
                       <label for="userName" class="field-label">Name</label>
                     </div>
                   </div>
@@ -531,7 +685,7 @@
                   <div class="col-md-6">
                     <div class="form-field">
                       <input type="email" class="form-input" name="email" id="userEmail" placeholder="Your Email"
-                        required="" />
+                        required="">
                       <label for="userEmail" class="field-label">Email</label>
                     </div>
                   </div>
@@ -540,7 +694,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-field">
-                      <input type="tel" class="form-input" name="phone" id="userPhone" placeholder="Your Phone" />
+                      <input type="tel" class="form-input" name="phone" id="userPhone" placeholder="Your Phone">
                       <label for="userPhone" class="field-label">Phone</label>
                     </div>
                   </div>
@@ -548,7 +702,7 @@
                   <div class="col-md-6">
                     <div class="form-field">
                       <input type="text" class="form-input" name="subject" id="messageSubject" placeholder="Subject"
-                        required="" />
+                        required="">
                       <label for="messageSubject" class="field-label">Subject</label>
                     </div>
                   </div>
@@ -563,9 +717,7 @@
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
 
                 <button type="submit" class="send-button">
@@ -580,10 +732,8 @@
             <div class="contact-sidebar">
               <div class="contact-header">
                 <h3>Get in Touch</h3>
-                <p>
-                  Sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua ut enim ad minim veniam quis nostrud.
-                </p>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis
+                  nostrud.</p>
               </div>
 
               <div class="contact-methods">
@@ -593,7 +743,7 @@
                   </div>
                   <div class="contact-details">
                     <span class="method-label">Address</span>
-                    <p>892 Park Avenue, Manhattan<br />New York, NY 10075</p>
+                    <p>892 Park Avenue, Manhattan<br>New York, NY 10075</p>
                   </div>
                 </div>
 
@@ -623,9 +773,7 @@
                   </div>
                   <div class="contact-details">
                     <span class="method-label">Hours</span>
-                    <p>
-                      Monday - Friday: 9AM - 6PM<br />Saturday: 10AM - 4PM
-                    </p>
+                    <p>Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM</p>
                   </div>
                 </div>
               </div>
@@ -652,40 +800,16 @@
         </div>
       </div>
     </section>
-    <!-- /Contact Section -->
+    <!-- /Contacto Section -->
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h4>Únase a nuestro boletín informativo</h4>
-            <p>
-              ¡Suscríbase a nuestro boletín y reciba las últimas noticias
-              sobre nuestros productos y servicios!
-            </p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form">
-                <input type="email" name="email" /><input type="submit" value="Subscribe"
-                  style="background-color: aliceblue; color: black" />
-              </div>
-              <div class="loading">Cargando</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Su solicitud de suscripción ha sido enviada. ¡Gracias!
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+  <footer id="footer" class="footer light-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Clínica Dental</span>
+            <span class="sitename">Centro Terapéutico</span>
           </a>
           <div class="footer-contact pt-3">
             <p>Calle 123</p>
@@ -701,18 +825,18 @@
           <h4>Links de interés</h4>
           <ul>
             <li>
-              <i class="bi bi-chevron-right"></i> <a href="#">La Clínica</a>
+              <i class="bi bi-chevron-right"></i> <a href="#sobre-nosotros">Sobre nosotros</a>
             </li>
             <li>
               <i class="bi bi-chevron-right"></i>
-              <a href="#">Sobre nosotros</a>
+              <a href="#areas-de-abordaje">Áreas de abordaje</a>
             </li>
             <li>
-              <i class="bi bi-chevron-right"></i> <a href="#">Tratamientos</a>
+              <i class="bi bi-chevron-right"></i> <a href="#servicios">Servicios</a>
             </li>
             <li>
               <i class="bi bi-chevron-right"></i>
-              <a href="#">Contacto</a>
+              <a href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -721,18 +845,18 @@
           <h4>Nuestros servicios</h4>
           <ul>
             <li>
-              <i class="bi bi-chevron-right"></i> <a href="#">Servicio1</a>
+              <i class="bi bi-chevron-right"></i> <a href="#servicios">Terapia Individual</a>
             </li>
             <li>
               <i class="bi bi-chevron-right"></i>
-              <a href="#">Servicio2</a>
+              <a href="#servicios">Terapia de Pareja y Familiar</a>
             </li>
             <li>
               <i class="bi bi-chevron-right"></i>
-              <a href="#">Servicio3</a>
+              <a href="#servicios">Orientación Vocacional</a>
             </li>
             <li>
-              <i class="bi bi-chevron-right"></i> <a href="#">Servicio4</a>
+              <i class="bi bi-chevron-right"></i> <a href="#servicios">Evaluaciones Neurocognitivas</a>
             </li>
           </ul>
         </div>
@@ -756,11 +880,11 @@
     <div class="container copyright text-center mt-4">
       <p>
         © <span>Copyright</span>
-        <strong class="px-1 sitename">Clínica Dental</strong>
+        <strong class="px-1 sitename">Centro Terapéutico</strong>
         <span>All Rights Reserved</span>
       </p>
       <div class="credits">
-        Designed by <a href="#" style="color: gold">Ing. Nico Gasco</a>
+        Designed by <a href="#" style="color: rgb(1, 3, 127)">NG Web Studio</a>
       </div>
     </div>
   </footer>
@@ -783,7 +907,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints..js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
