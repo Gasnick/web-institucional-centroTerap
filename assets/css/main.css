@@ -11,13 +11,13 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #f4f4f6;
+  --background-color: #f6f2cf;
   /* Background color for the entire website, including individual sections */
   --default-color: #444444;
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #172624;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0288b5;
+  --accent-color: #b56402;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -31,7 +31,7 @@
   /* The default color of the main navmenu links */
   --nav-hover-color: #0288b5;
   /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff;
+  --nav-mobile-background-color: #050505;
   /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff;
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -176,10 +176,10 @@ h6 {
 
 .header .topbar {
   background-color: var(--background-color);
-  height: 40px;
+  height: 35px;
   overflow: hidden;
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
   opacity: 1;
   visibility: visible;
   transition: max-height 0.4s ease, opacity 0.4s ease;
@@ -198,9 +198,8 @@ h6 {
 
 @media (max-width: 575px) {
 
-  .header .topbar .contact-info i a,
-  .header .topbar .contact-info i span {
-    font-size: 13px;
+  .header .topbar {
+    visibility: hidden;
   }
 }
 
@@ -227,7 +226,7 @@ h6 {
 
 .header .branding {
   min-height: 60px;
-  padding: 10px 0;
+  padding-bottom: 10px;
 }
 
 .header .logo {
@@ -240,7 +239,7 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
@@ -266,7 +265,8 @@ h6 {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: center; /* Center the list items */
+    justify-content: space-between
+      /* Center the list items */
   }
 
   .navmenu li {
@@ -276,19 +276,25 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 10px 20px; /* Adjusted padding for the box */
-    margin: 0 5px; /* Add space between boxes */
-    font-size: 15px;
+    padding: 10px 20px;
+    /* Adjusted padding for the box */
+    margin: 0 5px;
+    /* Add space between boxes */
+    font-size: 12px;
     font-family: var(--nav-font);
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center text inside the box */
+    justify-content: center;
+    /* Center text inside the box */
     white-space: nowrap;
     transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-    border: 1px solid transparent; /* Start with a transparent border */
-    border-radius: 8px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white */
+    border: 1px solid transparent;
+    /* Start with a transparent border */
+    border-radius: 8px;
+    /* Rounded corners */
   }
 
   .navmenu a i,
@@ -300,14 +306,17 @@ h6 {
   }
 
   .navmenu li:last-child a {
-    padding-right: 20px; /* Keep padding consistent */
+    padding-right: 20px;
+    /* Keep padding consistent */
   }
 
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--surface-color); /* White text on hover/active */
-    background-color: var(--accent-color); /* Blue background */
+    color: var(--surface-color);
+    /* White text on hover/active */
+    background-color: var(--accent-color);
+    /* Blue background */
     border-color: var(--accent-color);
   }
 
@@ -333,7 +342,7 @@ h6 {
 
   .navmenu .dropdown ul a {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: none;
     color: var(--nav-dropdown-color);
   }
@@ -501,7 +510,7 @@ h6 {
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-size: 14px;
+  font-size: 12px;
   padding-bottom: 50px;
   position: relative;
 }
@@ -571,7 +580,7 @@ h6 {
   height: 40px;
   border-radius: 4px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
+  font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-right: 10px;
   transition: 0.3s;
@@ -579,7 +588,7 @@ h6 {
 
 .footer .social-links a:hover {
   border: 5px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 20px;
+  font-size: 18px;
   width: 45px;
   height: 45px;
 }
@@ -785,7 +794,7 @@ h6 {
 }
 
 .page-title h1 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -819,7 +828,7 @@ section,
   background: linear-gradient(85deg,
       var(--surface-color) 0%,
       color-mix(in srgb, var(--accent-color), transparent 99%) 100%);
-  padding: 60px 0;
+  padding: 20px 0;
   scroll-margin-top: 78px;
   overflow: clip;
 }
@@ -842,7 +851,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -891,17 +900,24 @@ section,
   overflow: hidden;
 }
 
+.hero-container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 4000px;
+}
+
+
 .hero .hero-content {
   position: relative;
   z-index: 2;
 }
 
-.hero .hero-content .content {
-  padding: 80px 0;
-}
+
 
 .hero .hero-content .content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
   color: var(--heading-color);
@@ -909,7 +925,7 @@ section,
 
 @media (max-width: 768px) {
   .hero .hero-content .content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -973,11 +989,10 @@ section,
 
 .hero .hero-content .hero-image {
   position: relative;
-  padding: 80px 0;
+  padding: 0px 0;
 }
 
 .hero .hero-content .hero-image img {
-  border-radius: 12px;
   box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 85%);
   width: 100%;
   height: auto;
@@ -993,6 +1008,39 @@ section,
   box-shadow: 0 15px 40px color-mix(in srgb, var(--default-color), transparent 85%);
   backdrop-filter: blur(10px);
 }
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  max-height: 500px; /* controla el tamaño global sin cortar desde el centro */
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+
+  /* Para que se pueda mover el foco */
+  object-fit: cover;
+  object-position: top center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+
+  /* sombra para buena legibilidad */
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
 
 @media (max-width: 768px) {
   .hero .hero-content .hero-image .floating-card {
@@ -1198,7 +1246,7 @@ section,
 }
 
 .featured-services h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   margin-bottom: 20px;
   text-align: center;
@@ -1211,7 +1259,7 @@ section,
   text-align: center;
   line-height: 1.7;
   margin-bottom: 30px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .featured-services .service-link {
@@ -1222,7 +1270,7 @@ section,
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   opacity: 0.8;
   transform: translateY(10px);
   transition: all 0.4s ease;
@@ -1256,7 +1304,7 @@ section,
 }
 
 .about .content h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.3;
   margin-bottom: 30px;
@@ -1316,7 +1364,7 @@ section,
 }
 
 .about .content .stats-row .stat-item .stat-number {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: var(--accent-color);
   line-height: 1;
@@ -1789,7 +1837,7 @@ section,
 }
 
 .stats .achievement-badge .badge-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--accent-color);
   margin-bottom: 1.5rem;
   opacity: 0.8;
@@ -2051,7 +2099,7 @@ section,
   }
 
   .services p {
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 32px;
   }
 }
@@ -2418,7 +2466,7 @@ section,
   position: relative;
   cursor: pointer;
   padding: 12px 0;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   transition: all 0.4s ease-out;
@@ -3363,7 +3411,7 @@ section,
 }
 
 .contact .contact-sidebar .contact-method .contact-details p {
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.6;
   color: var(--default-color);
   margin-bottom: 0;
@@ -3486,7 +3534,7 @@ section,
 
 @media (max-width: 768px) {
   .service-details .service-intro h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -3709,7 +3757,7 @@ section,
 }
 
 .service-details .info-grid .info-card .info-content .price-range .price-value {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: var(--accent-color);
   display: block;
@@ -4063,7 +4111,7 @@ section,
 }
 
 .portfolio-details .metrics-showcase .metrics-grid .metric-item .metric-number {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: var(--accent-color);
   margin-bottom: 0.5rem;
@@ -4351,7 +4399,7 @@ section,
   }
 
   .portfolio-details .project-hero .hero-content .project-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .portfolio-details .project-hero .project-meta-grid {
@@ -4441,7 +4489,7 @@ section,
 }
 
 .terms-of-service .tos-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 15px;
 }
 
@@ -5054,8 +5102,9 @@ section,
 .header.header-with-bg {
   background: url('../img/imagen_fondo.jpg') no-repeat center center;
   background-size: cover;
-  position: relative;
-  color: #ffffff; /* Make default text color white */
+  position: sticky;
+  color: #ffffff;
+  /* Make default text color white */
 }
 
 .header.header-with-bg::before {
@@ -5065,8 +5114,10 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(23, 38, 36, 0.8); /* Dark overlay, using heading color with opacity */
-  z-index: 1; /* Place overlay above background but below content */
+  background: rgba(23, 38, 36, 0.8);
+  /* Dark overlay, using heading color with opacity */
+  z-index: 1;
+  /* Place overlay above background but below content */
 }
 
 /* Make sure header content is above the overlay */
@@ -5079,7 +5130,7 @@ section,
 /* Make topbar and branding backgrounds transparent */
 .header.header-with-bg .topbar,
 .header.header-with-bg {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /* Update text colors for readability */
@@ -5093,24 +5144,24 @@ section,
 
 .header.header-with-bg .topbar .social-links a:hover,
 .header.header-with-bg .topbar .contact-info i a:hover {
-    color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Adjust navmenu item background for contrast */
 .header.header-with-bg .navmenu a,
 .header.header-with-bg .navmenu a:focus {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
 .header.header-with-bg .navmenu li:hover>a,
 .header.header-with-bg .navmenu .active,
 .header.header-with-bg .navmenu .active:focus {
-    background-color: var(--accent-color);
-    color: #ffffff;
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 /* Ensure mobile nav toggle is visible */
 .header.header-with-bg .mobile-nav-toggle {
-    color: #ffffff;
+  color: #ffffff;
 }
